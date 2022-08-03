@@ -1,23 +1,23 @@
-import React, { useCallback, useState } from 'react';
-import { Header } from './components/Header';
-import { Article } from './components/Article';
+import React from 'react';
+import { BrowserRouter, Link } from 'react-router-dom';
+import { AppRoutes } from './AppRoutes';
 
 const App = () => {
-  const [count, setCount] = useState<number>(0);
-
-  const handleClick = useCallback(() => {
-    setCount((old) => old + 1);
-  }, []);
-
   return (
-    <div>
-      <Header>Header</Header>
-      <Article>Article</Article>
-      <Article>{count}</Article>
-      <button type="button" onClick={handleClick}>
-        +
-      </button>
-    </div>
+    <BrowserRouter>
+      <div>
+        <p>
+          <Link to="/">Main page</Link>
+        </p>
+        <p>
+          <Link to="/about">About page</Link>
+        </p>
+        <p>
+          <Link to="/contact">Contact page</Link>
+        </p>
+        <AppRoutes />
+      </div>
+    </BrowserRouter>
   );
 };
 
