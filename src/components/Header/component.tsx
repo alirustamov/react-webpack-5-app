@@ -2,5 +2,5 @@ import React, { FC } from 'react';
 import { HeaderProps } from './props';
 
 export const Header: FC<HeaderProps> = ({ children, ...rest }) => (
-    <h2 {...rest}>{children}</h2>
+  <h2 {...rest}>{children}</h2>
 );
