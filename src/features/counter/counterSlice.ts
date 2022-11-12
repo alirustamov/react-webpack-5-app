@@ -4,7 +4,7 @@ import {
   Dispatch,
   PayloadAction,
 } from '@reduxjs/toolkit';
-import { fetchCount } from './CounterApi';
+import { fetchCount } from './counterApi';
 // IMPORTANT! It's a circular import, but the TypeScript compiler can correctly
 // handle that for types. This may be needed for use cases like writing
 // selector functions.

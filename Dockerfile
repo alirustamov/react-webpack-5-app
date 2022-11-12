@@ -1,4 +1,4 @@
-FROM node:11.1.0-alpine AS node_base
+FROM node:18.12.1-alpine AS node_base
 
 FROM node_base as deps
 WORKDIR /usr/app

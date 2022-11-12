@@ -5,8 +5,9 @@
   "license": "MIT",
   "author": "Ali Rustamov",
   "scripts": {
-    "start": "webpack serve --open --config webpack.dev.js",
-    "build": "webpack --config webpack.prod.js",
+    "start": "webpack serve --open",
+    "dev": "webpack-dev-server -d webpack.dev.js",
+    "build": "webpack",
     "eslint": "eslint src/**/*.{ts,tsx} --fix"
   },
   "dependencies": {
@@ -38,6 +39,7 @@
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-react": "^7.28.0",
     "eslint-plugin-react-hooks": "^4.3.0",
+    "html-webpack-plugin": "^5.5.0",
     "prettier": "2.7.1",
     "sass": "^1.54.2",
     "sass-loader": "^13.0.2",
